@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>CERES-PC</Machine>
+    <WindowsUser>rohan</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>611a0f4a-6114-487f-b893-49f8fd6ea57e</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\rohan\Documents\FaceMeniacClient\MeniacCient\FaceMeniacClient\FaceMeniacClient.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>043E60A2B8D73ECCF9139C8323DECD38529D6D041CC702B6D29D502D6D8911FC</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>611a0f4a-6114-487f-b893-49f8fd6ea57e_1.0.0.0_neutral__40zw01ffg2gvr</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>611a0f4a-6114-487f-b893-49f8fd6ea57e_40zw01ffg2gvr!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>611a0f4a-6114-487f-b893-49f8fd6ea57e</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=rohan</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\rohan\Documents\FaceMeniacClient\MeniacCient\FaceMeniacClient\FaceMeniacClient.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-12T08:33:20.868</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\rohan\Documents\FaceMeniacClient\MeniacCient\FaceMeniacClient\FaceMeniacClient.Windows\bin\Debug\FaceMeniacClient.Windows.exe">
+      <PackagePath>FaceMeniacClient.Windows.exe</PackagePath>
+      <Modified>2015-12-12T08:33:19.998</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rohan\Documents\FaceMeniacClient\MeniacCient\FaceMeniacClient\FaceMeniacClient.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-07T00:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rohan\Documents\FaceMeniacClient\MeniacCient\FaceMeniacClient\FaceMeniacClient.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-07T00:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rohan\Documents\FaceMeniacClient\MeniacCient\FaceMeniacClient\FaceMeniacClient.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-07T00:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rohan\Documents\FaceMeniacClient\MeniacCient\FaceMeniacClient\FaceMeniacClient.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-07T00:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rohan\Documents\FaceMeniacClient\MeniacCient\FaceMeniacClient\FaceMeniacClient.Windows\bin\Debug\FaceMeniacClient.Windows.xr.xml">
+      <PackagePath>FaceMeniacClient.Windows.xr.xml</PackagePath>
+      <Modified>2015-12-12T08:33:19.560</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rohan\Documents\FaceMeniacClient\MeniacCient\FaceMeniacClient\FaceMeniacClient.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-12-12T08:33:19.838</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rohan\Documents\FaceMeniacClient\MeniacCient\FaceMeniacClient\FaceMeniacClient.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-12-12T08:33:19.838</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\rohan\Documents\FaceMeniacClient\MeniacCient\FaceMeniacClient\FaceMeniacClient.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-12-12T08:33:20.398</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

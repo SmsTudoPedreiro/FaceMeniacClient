@@ -1,0 +1,1 @@
+C:\Users\rohan\Documents\FaceMeniacClient\MeniacCient\FaceMeniacClient\FaceMeniacClient.Windows\FaceMeniacClient.Windows.csproj;neutral
