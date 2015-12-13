@@ -11,6 +11,7 @@
         <CommandBar>
             <AppBarButton Icon="Camera" Label="" Click="AppBarButton_Click"/>
             <AppBarButton Icon="Attach" Label="" Click="AppBarButton_Click_1"/>
+            <AppBarButton Icon="Send" Label="" Click="AppBarButton_Click_2"/>
         </CommandBar>
     </Page.BottomAppBar>
 
@@ -20,11 +21,6 @@
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,50,0,0" TextWrapping="Wrap" Text="envio de imagens" VerticalAlignment="Top" FontSize="48"/>
         <Grid x:Name="pictureContainer" Height="544" VerticalAlignment="Bottom">
             <Image x:Name="imagePlaceholder" Height="Auto" Width="Auto"/>
-            <CaptureElement x:Name="capturePreview" Height="544" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Margin="-25.315,0,-24.681,-25.163" UseLayoutRounding="False" d:LayoutRounding="Auto">
-                <CaptureElement.RenderTransform>
-                    <CompositeTransform Rotation="90.727"/>
-                </CaptureElement.RenderTransform>
-            </CaptureElement>
         </Grid>
 
     </Grid>

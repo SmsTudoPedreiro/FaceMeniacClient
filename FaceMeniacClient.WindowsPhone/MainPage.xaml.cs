@@ -152,5 +152,10 @@ namespace FaceMeniacClient
                 //imagePreivew.Source = bitmapImage;
             }
         }
+
+        private void AppBarButton_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
