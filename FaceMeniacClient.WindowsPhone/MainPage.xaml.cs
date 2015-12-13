@@ -131,9 +131,12 @@ namespace FaceMeniacClient
                 byte[] bytes = null;
 
                 bytes = await ReadFile(File);
-                ///await Task.Delay(TimeSpan.FromSeconds(1));
+                await Task.Delay(TimeSpan.FromSeconds(1));
+                Debug.WriteLine("2------------" + bytes.Length);
                 await stream.WriteAsync(bytes.AsBuffer());
+                await Task.Delay(TimeSpan.FromSeconds(1));
                 await stream.FlushAsync();
+                await Task.Delay(TimeSpan.FromSeconds(1));
             }
             await ftp.DisconnectAsync();
         }
