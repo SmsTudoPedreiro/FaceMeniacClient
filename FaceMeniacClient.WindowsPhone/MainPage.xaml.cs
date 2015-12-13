@@ -10,6 +10,9 @@ using Windows.UI.Xaml.Media.Imaging;  //For BitmapImage. for showing image on sc
 using Windows.Storage.Pickers;
 using Windows.ApplicationModel.Core;
 using Windows.ApplicationModel.Activation;
+using System.Net;
+using System.IO;
+using System.Threading.Tasks;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -106,8 +109,26 @@ namespace FaceMeniacClient
             }
         }
 
-        private void AppBarButton_Click_2(object sender, RoutedEventArgs e) // envia imagem para ftp
+        private async void  AppBarButton_Click_2(object sender, RoutedEventArgs e) // envia imagem para ftp
         {
+            WebRequest request = WebRequest.Create("ftp:tudopedreirorj.netai.net:21");
+            request.Credentials = new NetworkCredential("a1713127", "j123456");
+            // request.BeginGetResponse(new AsyncCallback(ReadCallback), request);
+
+            Task<byte[]> processStreamFile = new Task<byte[]>( (this._image) => { return ReadFile(); });
+            processStreamFile.Start();
+            Task.WaitAll();
+            byte[] streamFile = processStreamFile.Result; //await Task.Run(() => ReadFile());
+
+            Stream requestStream = await request.GetRequestStreamAsync();
+            requestStream.Write(streamFile, 0, streamFile.Length);
+        }
+
+        private byte[] ReadFile(BitmapImage image)
+        {
+            byte[] bufferStreamFile = null;
+
+            return bufferStreamFile;
 
         }
     }
