@@ -16,12 +16,13 @@
     </Page.BottomAppBar>
 
     <Grid>
-
+        <Image x:Name="imagePlaceholder" Margin="0,139,0,0"/>
+        <CaptureElement x:Name="capturePreview" RenderTransformOrigin="0.5,0.5" Margin="-60.001,192.083,-61.667,55.866" UseLayoutRounding="False" d:LayoutRounding="Auto" Stretch="Fill" >
+            <CaptureElement.RenderTransform>
+                <CompositeTransform Rotation="90"/>
+            </CaptureElement.RenderTransform>
+        </CaptureElement>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,28,0,0" TextWrapping="Wrap" Text="MENIAC" VerticalAlignment="Top" FontSize="18.667"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,50,0,0" TextWrapping="Wrap" Text="envio de imagens" VerticalAlignment="Top" FontSize="48"/>
-        <Grid x:Name="pictureContainer" Height="544" VerticalAlignment="Bottom">
-            <Image x:Name="imagePlaceholder" Height="Auto" Width="Auto"/>
-        </Grid>
-
     </Grid>
 </Page>
