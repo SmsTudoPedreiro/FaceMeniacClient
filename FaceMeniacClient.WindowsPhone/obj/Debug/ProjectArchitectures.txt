@@ -1,1 +1,1 @@
-C:\Users\rohan\Documents\Nova pasta\MeniacCient\FaceMeniacClient\FaceMeniacClient.WindowsPhone\FaceMeniacClient.WindowsPhone.csproj;neutral
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\FaceMeniacClient.WindowsPhone.csproj;neutral

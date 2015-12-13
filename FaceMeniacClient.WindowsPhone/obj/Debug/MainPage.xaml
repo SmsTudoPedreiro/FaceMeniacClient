@@ -7,12 +7,26 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:ConnectionId='1' Icon="Camera" Label=""                           />
+            <AppBarButton x:ConnectionId='2' Icon="Attach" Label=""                             />
+        </CommandBar>
+    </Page.BottomAppBar>
 
     <Grid>
-        <CaptureElement x:Name="capturePreview" Margin="0,0,0,378" />
-        <Image x:Name="imagePreivew" Margin="0,262,0,115" />
-        <Button x:ConnectionId='1' x:Name="uxBtnCapture"                             Content="Capture Photo" Margin="130,585,0,-3" Width="260" Height="52"/>
-        <Button x:ConnectionId='2' x:Name="uxBtnSendPhoto"                        Content="Enviar" HorizontalAlignment="Left" VerticalAlignment="Top" IsEnabled="False" Margin="10,585,0,-2"/>
+
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,28,0,0" TextWrapping="Wrap" Text="MENIAC" VerticalAlignment="Top" FontSize="18.667"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,50,0,0" TextWrapping="Wrap" Text="envio de imagens" VerticalAlignment="Top" FontSize="48"/>
+        <Grid x:Name="pictureContainer" Height="544" VerticalAlignment="Bottom">
+            <Image x:Name="imagePlaceholder" Height="Auto" Width="Auto"/>
+            <CaptureElement x:Name="capturePreview" Height="544" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Margin="-25.315,0,-24.681,-25.163" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <CaptureElement.RenderTransform>
+                    <CompositeTransform Rotation="90.727"/>
+                </CaptureElement.RenderTransform>
+            </CaptureElement>
+        </Grid>
+
     </Grid>
 </Page>
 

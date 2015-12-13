@@ -18,17 +18,31 @@
     <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
   </Prerequisites>
   <Resources>
-    <Resource Language="EN-US" />
+    <Resource Language="PT-BR" />
   </Resources>
   <Applications>
     <Application Id="App" Executable="FaceMeniacClient.Windows.exe" EntryPoint="FaceMeniacClient.Windows.App">
-      <m2:VisualElements DisplayName="FaceMeniacClient.Windows" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="FaceMeniacClient.Windows" ForegroundText="light" BackgroundColor="#464646">
+      <m2:VisualElements DisplayName="Meniac" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="FaceMeniacClient.Windows" ForegroundText="light" BackgroundColor="#464646">
         <m2:SplashScreen Image="Assets\SplashScreen.png" />
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="portrait" />
+        </m2:InitialRotationPreference>
       </m2:VisualElements>
+      <Extensions>
+        <Extension Category="windows.cameraSettings" />
+        <Extension Category="windows.fileOpenPicker">
+          <FileOpenPicker>
+            <SupportedFileTypes>
+              <FileType>.jpg</FileType>
+            </SupportedFileTypes>
+          </FileOpenPicker>
+        </Extension>
+      </Extensions>
     </Application>
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
+    <Capability Name="picturesLibrary" />
   </Capabilities>
   <build:Metadata>
     <build:Item Name="SharedGUID" Value="aab4d96d-153d-4ef9-9c71-4729ed1b2ce4" />
@@ -38,7 +52,7 @@
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2015" />
     <build:Item Name="OperatingSystem" Version="10.0.10240.16384 (th1.150709-1700)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.24720.0" />
-    <build:Item Name="ProjectGUID" Value="e3bd1537-6a27-465c-b1bc-2bbe05eba25a" />
+    <build:Item Name="ProjectGUID" Value="{E3BD1537-6A27-465C-B1BC-2BBE05EBA25A}" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.81.Build.Tasks.dll" Version="14.0.22705.1" />
     <build:Item Name="MakePri.exe" Version="6.3.9600.17336 (winblue.150226-1500)" />
   </build:Metadata>

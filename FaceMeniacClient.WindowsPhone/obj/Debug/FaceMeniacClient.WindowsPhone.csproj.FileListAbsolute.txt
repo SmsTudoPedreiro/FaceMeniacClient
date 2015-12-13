@@ -62,3 +62,35 @@ C:\Users\rohan\Documents\Nova pasta\MeniacCient\FaceMeniacClient\FaceMeniacClien
 C:\Users\rohan\Documents\Nova pasta\MeniacCient\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\qualifiers.txt.intermediate
 C:\Users\rohan\Documents\Nova pasta\MeniacCient\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\rohan\Documents\Nova pasta\MeniacCient\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\ProjectArchitectures.txt
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\bin\Debug\App.xbf
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\bin\Debug\MainPage.xbf
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\bin\Debug\FaceMeniacClient.WindowsPhone.xr.xml
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\bin\Debug\FaceMeniacClient.WindowsPhone.exe
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\bin\Debug\FaceMeniacClient.WindowsPhone.pdb
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\bin\Debug\resources.pri
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\bin\Debug\AppxManifest.xml
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\bin\Debug\FaceMeniacClient.WindowsPhone.build.appxrecipe
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\App.g.i.cs
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\App.g.cs
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\MainPage.g.i.cs
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\MainPage.g.cs
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\App.xaml
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\App.xbf
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\XamlSaveStateFile.xml
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\MainPage.xaml
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\MainPage.xbf
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\FaceMeniacClient.WindowsPhone.exe
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\FaceMeniacClient.WindowsPhone.pdb
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\priconfig.xml
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\priconfig.xml.intermediate
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\layout.resfiles
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\layout.resfiles.intermediate
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\resources.resfiles
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\resources.resfiles.intermediate
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\pri.resfiles
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\pri.resfiles.intermediate
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\qualifiers.txt
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\qualifiers.txt.intermediate
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\ProjectArchitectures.txt
