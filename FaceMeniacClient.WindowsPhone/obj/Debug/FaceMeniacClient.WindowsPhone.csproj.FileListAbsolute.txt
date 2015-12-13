@@ -94,3 +94,9 @@ C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\D
 C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\qualifiers.txt.intermediate
 C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\ProjectArchitectures.txt
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\FaceMeniacClient.WindowsPhone.csprojResolveAssemblyReference.cache
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\bin\Debug\Cubisoft.Winrt.Ftp.dll
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\bin\Debug\Cubisoft.Winrt.Ftp.pdb
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\bin\Debug\Cubisoft.Winrt.Ftp.pri
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\FaceMeniacClient.WindowsPhone.csproj.GenerateResource.Cache
+C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\obj\Debug\Cubisoft.Winrt.Ftp.pri.xml

@@ -124,17 +124,21 @@ namespace FaceMeniacClient.FaceMeniacClient_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
+            _typeNameTable = new string[6];
             _typeNameTable[0] = "FaceMeniacClient.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "Windows.UI.Xaml.Media.Imaging.BitmapImage";
+            _typeNameTable[4] = "Windows.Storage.StorageFile";
+            _typeNameTable[5] = "Object";
 
-            _typeTable = new global::System.Type[4];
+            _typeTable = new global::System.Type[6];
             _typeTable[0] = typeof(global::FaceMeniacClient.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::Windows.UI.Xaml.Media.Imaging.BitmapImage);
+            _typeTable[4] = typeof(global::Windows.Storage.StorageFile);
+            _typeTable[5] = typeof(global::System.Object);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -185,6 +189,7 @@ namespace FaceMeniacClient.FaceMeniacClient_WindowsPhone_XamlTypeInfo
                 userType = new global::FaceMeniacClient.FaceMeniacClient_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_0_MainPage;
                 userType.AddMemberName("Image");
+                userType.AddMemberName("File");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -198,6 +203,16 @@ namespace FaceMeniacClient.FaceMeniacClient_WindowsPhone_XamlTypeInfo
                 break;
 
             case 3:   //  Windows.UI.Xaml.Media.Imaging.BitmapImage
+                xamlType = new global::FaceMeniacClient.FaceMeniacClient_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 4:   //  Windows.Storage.StorageFile
+                userType = new global::FaceMeniacClient.FaceMeniacClient_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 5:   //  Object
                 xamlType = new global::FaceMeniacClient.FaceMeniacClient_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -215,6 +230,16 @@ namespace FaceMeniacClient.FaceMeniacClient_WindowsPhone_XamlTypeInfo
             var that = (global::FaceMeniacClient.MainPage)instance;
             that.Image = (global::Windows.UI.Xaml.Media.Imaging.BitmapImage)Value;
         }
+        private object get_1_MainPage_File(object instance)
+        {
+            var that = (global::FaceMeniacClient.MainPage)instance;
+            return that.File;
+        }
+        private void set_1_MainPage_File(object instance, object Value)
+        {
+            var that = (global::FaceMeniacClient.MainPage)instance;
+            that.File = (global::Windows.Storage.StorageFile)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
@@ -228,6 +253,12 @@ namespace FaceMeniacClient.FaceMeniacClient_WindowsPhone_XamlTypeInfo
                 xamlMember = new global::FaceMeniacClient.FaceMeniacClient_WindowsPhone_XamlTypeInfo.XamlMember(this, "Image", "Windows.UI.Xaml.Media.Imaging.BitmapImage");
                 xamlMember.Getter = get_0_MainPage_Image;
                 xamlMember.Setter = set_0_MainPage_Image;
+                break;
+            case "FaceMeniacClient.MainPage.File":
+                userType = (global::FaceMeniacClient.FaceMeniacClient_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FaceMeniacClient.MainPage");
+                xamlMember = new global::FaceMeniacClient.FaceMeniacClient_WindowsPhone_XamlTypeInfo.XamlMember(this, "File", "Windows.Storage.StorageFile");
+                xamlMember.Getter = get_1_MainPage_File;
+                xamlMember.Setter = set_1_MainPage_File;
                 break;
             }
             return xamlMember;
@@ -554,5 +585,6 @@ namespace FaceMeniacClient.FaceMeniacClient_WindowsPhone_XamlTypeInfo
         }
     }
 }
+
 
 

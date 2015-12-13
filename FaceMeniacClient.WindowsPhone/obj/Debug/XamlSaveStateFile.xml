@@ -1,5 +1,6 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\crist\source\repos\facemeniacclient\facemeniacclient.windowsphone\obj\debug\intermediatexaml\facemeniacclient.windowsphone.exe" HashGuid="6937bca8-a663-d563-dded-dbc6c57e5ddf" />
+    <LocalAssembly PathName="c:\users\crist\source\repos\facemeniacclient\facemeniacclient.windowsphone\obj\debug\intermediatexaml\facemeniacclient.windowsphone.exe" HashGuid="70c247da-5890-231f-139f-fa52ae55dcfd" />
+    <ReferenceAssembly PathName="c:\users\crist\desktop\cubisoft.winrt.ftp\cubisoft.winrt.ftp.dll" HashGuid="b5445382-bacf-4a4d-0f8b-050301206075" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

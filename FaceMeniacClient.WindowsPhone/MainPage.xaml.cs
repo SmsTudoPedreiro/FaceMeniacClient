@@ -11,8 +11,11 @@ using Windows.Storage.Pickers;
 using Windows.ApplicationModel.Core;
 using Windows.ApplicationModel.Activation;
 using System.Net;
-using System.IO;
 using System.Threading.Tasks;
+using Windows.Storage.Streams;
+using Cubisoft.Winrt.Ftp;
+using System.Runtime.InteropServices.WindowsRuntime;
+using System.Diagnostics;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -36,6 +39,9 @@ namespace FaceMeniacClient
                 this.imagePlaceholder.Source = this._image;
             }
         }
+
+        public StorageFile File { get; set; }
+
 
         public MainPage()
         {
@@ -62,16 +68,16 @@ namespace FaceMeniacClient
             
             // create storage file in local app storage  
             Random random = new Random();
-            StorageFile file = await ApplicationData.Current.LocalFolder.CreateFileAsync(random.Next(1, 9999) + ".jpg", CreationCollisionOption.ReplaceExisting);
+            File = await ApplicationData.Current.LocalFolder.CreateFileAsync(random.Next(1, 9999) + ".jpg", CreationCollisionOption.ReplaceExisting);
 
             // take photo and store it on file location.  
-            await captureManager.CapturePhotoToStorageFileAsync(imgFormat, file);
+            await captureManager.CapturePhotoToStorageFileAsync(imgFormat, File);
 
             StorageFolder folder = KnownFolders.SavedPictures;
-            await file.MoveAsync(folder);
+            await File.MoveAsync(folder);
 
             // Get photo as a BitmapImage using storage file path.  
-            Image = new BitmapImage(new Uri(file.Path));
+            Image = new BitmapImage(new Uri(File.Path));
             await captureManager.StopPreviewAsync();  //stop camera capturing  
         }
 
@@ -99,8 +105,8 @@ namespace FaceMeniacClient
                 if (args.Files.Count == 0) return;
 
                 this.view.Activated -= viewActivated;
-                StorageFile storageFile = args.Files[0];
-                var stream = await storageFile.OpenAsync(Windows.Storage.FileAccessMode.Read);
+                File = args.Files[0];
+                var stream = await File.OpenAsync(Windows.Storage.FileAccessMode.Read);
                 var bitmapImage = new Windows.UI.Xaml.Media.Imaging.BitmapImage();
                 await bitmapImage.SetSourceAsync(stream);
 
@@ -111,25 +117,42 @@ namespace FaceMeniacClient
 
         private async void  AppBarButton_Click_2(object sender, RoutedEventArgs e) // envia imagem para ftp
         {
-            WebRequest request = WebRequest.Create("ftp:tudopedreirorj.netai.net:21");
-            request.Credentials = new NetworkCredential("a1713127", "j123456");
-            // request.BeginGetResponse(new AsyncCallback(ReadCallback), request);
+            FtpClient ftp = new FtpClient()
+            {
+                HostName = new Windows.Networking.HostName("tudopedreirorj.netai.net"),
+                Credentials = new NetworkCredential("a1713127", "j123456"),
+                ServiceName = "21"
+            };
 
-            Task<byte[]> processStreamFile = new Task<byte[]>( (this._image) => { return ReadFile(); });
-            processStreamFile.Start();
-            Task.WaitAll();
-            byte[] streamFile = processStreamFile.Result; //await Task.Run(() => ReadFile());
+            await ftp.ConnectAsync();
+            await ftp.SetDataTypeAsync(FtpDataType.Binary);
+            using (var stream = await ftp.OpenWriteAsync("/public_html/" + File.Name))
+            {
+                byte[] bytes = null;
 
-            Stream requestStream = await request.GetRequestStreamAsync();
-            requestStream.Write(streamFile, 0, streamFile.Length);
+                bytes = await ReadFile(File);
+                ///await Task.Delay(TimeSpan.FromSeconds(1));
+                await stream.WriteAsync(bytes.AsBuffer());
+                await stream.FlushAsync();
+            }
+            await ftp.DisconnectAsync();
         }
 
-        private byte[] ReadFile(BitmapImage image)
+        // que metodo sensual, rapá!
+        private async Task<byte[]> ReadFile(StorageFile file)
         {
-            byte[] bufferStreamFile = null;
+            byte[] fileBytes = null;
+            using (IRandomAccessStreamWithContentType stream = await file.OpenReadAsync())
+            {
+                fileBytes = new byte[stream.Size];
+                using (DataReader reader = new DataReader(stream))
+                {
+                    await reader.LoadAsync((uint)stream.Size);
+                    reader.ReadBytes(fileBytes);
+                }
+            }
 
-            return bufferStreamFile;
-
+            return fileBytes;
         }
     }
 }

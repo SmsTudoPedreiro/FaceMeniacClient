@@ -21,6 +21,9 @@
     <AppxPackagedFile Include="C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\bin\Debug\FaceMeniacClient.WindowsPhone.exe">
       <PackagePath>FaceMeniacClient.WindowsPhone.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\crist\Desktop\Cubisoft.Winrt.Ftp\Cubisoft.Winrt.Ftp.dll">
+      <PackagePath>Cubisoft.Winrt.Ftp.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\crist\Source\Repos\FaceMeniacClient\FaceMeniacClient.WindowsPhone\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
